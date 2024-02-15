@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!----------------Added for the icons to work---------------->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!----------------Added for the icons to work---------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projectss">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <i class="fa-solid fa-circle" onclick="closethemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-star" onclick="openmenu()"></i>
+            </nav>
+            <div class="containter2">
+                <img class="img" src="images/background1.png">
+                <div class="header-text">
+                    <p>Full Stack Developer</p>
+                    <h1>Hi, I'm <span>Mbongiseni</span> <br>Ntimane from<br> South Africa</h1>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!----------------About---------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/image4.jpg">
+                </div>
+                <div class="col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>My Name is Mbongiseni Ntimane a Central University of Technology final year
+                        student with passion for Software Dev/Engineering and other tech related roles.
+                        I thrive on turning innovative ideas into reality.Eager to embark on dynamic career
+                        where creativity meets technology.
+                    </p>
+
+                    <div class="tabs">
+                        <p class="tab-links active-link">Skills</p>
+
+                    </div>
+                    <div class="tab-contents active-tab">
+                        <ul>
+                            <li><span>App Development</span><br>Designing Apps using Flutter</li>
+                            <li><span>Web Development</span><br>Designing websites using Html,Css,Javascript(Partially)
+                            </li>
+                            <li><span>C#</span><br>.Net Framework,MVC etc</li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------Projects---------------->
+
+
+    <div id="projectss">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+
+            <div class="projects-list">
+                <div class="project1">
+                    <img src="images/image6.png">
+                    <div class="layer">
+                        <h3>Student Management System</h3>
+                        <p>The student management system let you create,edit,delete students in database. </p>
+                        <a href="https://github.com/MbongiseniNtimane/StudentManagementSystem">Here</a>
+
+                    </div>
+                </div>
+                <div class="project2">
+                    <img src="images/image7.png">
+                    <div class="layer2">
+                        <h4>UX/UI Interface</h4>
+                        <p>E commerce online store user interface,made in Pencil Project.</p>
+                        <a href="https://github.com/MbongiseniNtimane/Ecommerce-User-Interface">Here</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="https://github.com/MbongiseniNtimane" class="readmore">Read More</a>
+
+        </div>
+
+    </div>
+
+
+
+    <!----------------Resume---------------->
+    <div id="resume">
+        <div class="container">
+            <h1 class="res-n">Resume</h1>
+
+            <div class="resumeimg">
+                <div class="resume1">
+                    <img src="images/resume.png">
+                </div>
+
+                <div class="downloadresume">
+                    <a href="pdf/Mbongiseni resume.pdf" download class="btn-download">Download <span
+                            class="u-bolder">Resume</span></a>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <!----------------Resume---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ntimanembongiseni11532003@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0684604775</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mbongiseni-ntimane-20864027b"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/MbongiseniNtimane"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="sub-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------Javascript to display sidebar /sidemenu on the website for smaller devices---------------->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closethemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

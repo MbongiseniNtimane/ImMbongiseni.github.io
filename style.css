@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #ffff;
+
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container {
+    padding: 10px 10%;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.img {
+    float: right;
+    width: 30%;
+
+}
+
+
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 7%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+.header-text h1 span {
+    color: blue;
+}
+
+/*-----------------About------------------*/
+
+#about {
+    padding: 250px 0;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    flex-basis: 35%;
+}
+
+.col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.col-2 {
+    flex-basis: 60%;
+}
+
+.subtitle {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.tabs {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: blue;
+    font-size: 13px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/*-----------------Project------------------*/
+
+#projectss {
+
+    padding: 50px 0;
+}
+
+.sub-title {
+    font-size: 60px;
+    margin-bottom: 70px;
+}
+
+.projects-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project1 {
+    flex-basis: 35%;
+}
+
+.project1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.project2 {
+    flex-basis: 35%;
+}
+
+.project2 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.layer h3 {
+    color: blue;
+}
+
+.project2 h4 {
+    color: blue;
+}
+
+.readmore {
+    color: white;
+    position: relative;
+    left: 570px;
+    top: 35px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 60px;
+    background: blue;
+    width: 90px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+
+/*-----------------Resume------------------*/
+
+#resume {
+    padding: 50px 0;
+}
+
+.res-n {
+    font-size: 60px;
+    margin-bottom: 70px;
+}
+
+.resumeimg img {
+    width: 370px;
+    height: 520px;
+
+}
+
+.btn-download {
+    display: block;
+    background: blue;
+    color: white;
+    padding: 15px;
+    cursor: 15px;
+    text-decoration: none;
+    width: 177px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-size: 16px;
+    position: fixed;
+    bottom: 27px;
+    z-index: 100;
+    left: calc(50% - 90px);
+    text-align: center;
+
+
+}
+
+/*-----------------Contact------------------*/
+
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    color: #ababab;
+    transition: transform 0.5s;
+    /*-----------------make icons move with speed of 0.5s------------------*/
+}
+
+.social-icons a:hover {
+    color: blue;
+    transform: translate(-5px);
+    /*-----------------move icons up by 5px------------------*/
+}
+
+.sub-btn {
+    display: inline-block;
+    background: blue;
+    border-radius: 6px;
+    color: white;
+    width: 85px;
+    height: 40px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 650px;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    border: 0;
+    width: 100%;
+    outline: none;
+    background: #272727;
+    padding: 15px;
+    margin: 15px 0;
+    color: blue;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+nav .fa {
+    display: none;
+
+}
+
+
+
+/*-----------------css media query to make screen fit in phones------------------*/
+@media only screen and (max-width:600px) {
+
+
+
+    nav .fa {
+        display: block;
+        font-size: 25px;
+        color: white;
+    }
+
+    nav ul {
+        background: blue;
+        /*-----------------change it(position) to fixed if you want it to disappear------------------*/
+        position: absolute;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .readmore {
+        color: white;
+        position: relative;
+        left: 150px;
+        top: 35px;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 60px;
+        background: blue;
+        width: 90px;
+        height: 60px;
+        border-radius: 50%;
+
+
+    }
+
+    .resumeimg img {
+        width: 250px;
+        height: 370px;
+
+    }
+
+    .contact-left {
+        width: 100px;
+        height: 50px;
+    }
+
+    .contact-right {
+        width: 100px;
+        height: 50px;
+        position: relative;
+        top: 250px;
+    }
+
+    .sub-btn {
+        position: relative;
+        right: 470px;
+    }
+
+    nav ul .fa {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+
+
+
+}
